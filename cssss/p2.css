@@ -1,0 +1,415 @@
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Small media */
+@media (min-width:768px){
+    .container{
+        width: 750px;
+    }
+}
+/* Medium media */
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+/* Large media */
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+/* Start Header */
+.header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo{
+    width: 60px;
+    margin-left: 100px;
+}
+.header .links{
+    position: relative;
+}
+.header .links:hover .icon span:nth-child(2){
+    width:100%;
+}
+
+
+.header .links .icon{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    
+}
+
+.header .links .icon span {
+    background-color: #333;
+    margin-bottom: 5px;
+    height: 2px;
+
+}
+
+.header .links .icon span:first-child {
+    width:100%;
+}
+.header .links .icon span:nth-child(2) {
+    width:60%;
+    transition:0.3s;
+
+}
+.header .links .icon span:last-child{
+    width:100%;
+}
+
+.header .links ul{
+    list-style: none;
+    padding: 0;
+    background-color:#EEE;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+}
+.header .links:hover ul{
+    display: block;
+    z-index: 1;
+}
+
+.header .links ul::before{
+    content: '';
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent rgb(231, 220, 220) transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+
+}
+.header .links ul li a{
+    padding: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+    display: block;
+    color: black
+
+}
+.header .links ul li:not(:last-child) a{
+    border-bottom: solid 1px rgb(70, 69, 69);
+}
+
+.header .links ul li a:hover{
+    padding-left: 25px;
+
+}
+
+
+/* End Header */
+
+/* Start Home */
+.home{
+    position: relative;
+    margin-top: 20px;
+}
+.home .container{
+    background-image: url("../image/denali-unit-13-nps.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.home .container .text{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    width: 320px;
+    max-width: 100%;
+}
+.home .container .text h2{
+    font-weight: 800;
+    font-size: 50px;
+    color: #10cab7;
+}
+.home .container .text p{
+    line-height: 1.6;
+
+    font-size: 20px;
+    color: #2c4755;
+}
+/* End Home */
+/* Strat Personal */
+.personal .container{
+    margin: 20px auto;
+    width: 100%;
+    background-color: white;
+   
+    
+}
+
+.superhead{
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+    color: #ebeced;
+    letter-spacing:1px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+.one {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #797979;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.two{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #797979;
+    position: absolute;
+    top: 294%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.personal .container .main{
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px #DDD;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3%; 
+    background-color: rgb(145, 180, 211);
+}
+.personal .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+   background-color: #f6f6f6;
+    
+}
+.personal .container .main i{
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    
+    margin-top: 5px;
+}
+.personal .container .main h2{
+    text-align: center;
+    margin-top: 40px;
+    
+}
+.personal .container .main p{
+    display: block;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* End Personal */
+/* Start Doctor */
+.doctor .container{
+    margin: 20px auto;
+    width: 100%;
+    background-color: white;
+   
+    
+}
+
+.superhead{
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+    color: #ebeced;
+    letter-spacing:1px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+.one {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #797979;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.two{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #797979;
+    position: absolute;
+    top: 294%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.doctor .container .main{
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px #DDD;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3%; 
+    background-color: rgb(204, 206, 192);
+}
+.doctor .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+   background-color: #fbfbf3;
+    
+}
+.doctor .container .main i{
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    color: rgb(0, 95, 204);
+    margin-top: 5px;
+}
+.doctor .container .main h2{
+    text-align: center;
+    margin-top: 40px;
+    
+}
+.doctor .container .main p{
+    display: block;
+    font-weight: 500;
+    text-align: center;
+}
+.doctor .container .main a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    left: 75px;
+}
+/* End Doctor */
+/* Start Contact */
+.contact{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
+}
+.three{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #797979;
+    position: absolute;
+    top: 465%;
+    left: 50%;
+    transform: translate(-50%);
+}
+@media (max-width: 767px){
+.contact .container .specialhead {
+    font-size: 80px;
+    text-align: center;
+}
+}
+@media(max-width:767px){
+    .contact .container .specialhead + p{
+        margin-top: -85px;
+        font-size: 15px;
+    }
+}
+.contact .superhead{
+    font-weight: 800;
+    font-size: 60px;
+    text-align: center;
+    color: #ebeced;
+    letter-spacing:1px;
+    margin: -53px auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+.contact .info{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+.contact .info .con{
+    font-size: 40px;
+    font-weight: 800;
+    color: #2c4755;
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+    margin-left: 146px;
+}
+.contact .info .link{
+    font-size: 40px;
+    font-weight: 800;
+    color: #10cab7;
+    text-decoration: none;
+    display: block;
+    margin-left: 146px;
+}
+@media (max-width:767px){
+    .contact .info .link,
+    .contact .info .con{
+        font-size: 25px;
+    }
+}
+.contact .info .social{
+    font-size: 18px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    margin-left: 120px;
+}
+.contact .info .social i{
+    margin-left: 10px;
+    color: #2c4755;
+}
+/* End Contact */
+/* Start Footer */
+.footer{
+    background-color: #2c4755;
+    padding: 30px 15px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+.footer span{
+    font-weight: bold;
+    color: #10cab7;
+}
+/* End Footer */
